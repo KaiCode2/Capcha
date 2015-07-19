@@ -18,16 +18,23 @@ protocol CapchaType {
 }
 
 extension CapchaType {
-    allowedAttempt = 1
+    var allowedAttempts: Int { return 1 }
 }
 
 enum CapchaQuestionType {
-    case numbers
-    case letter
-    case all
+    case Numbers
+    case Letter
+    case All
 }
 
 struct Capcha: CapchaType {
+    var answer: String
+    var type: CapchaQuestionType
+    var length: Int
+    
+    var validator: CapchaValidatorType
+    
+    
     init(answer: String, type: CapchaQuestionType, length: Int, validator: CapchaValidatorType) {
         self.answer = answer
         self.type = type
