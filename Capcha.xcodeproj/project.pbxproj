@@ -13,6 +13,10 @@
 		125AC8F51B5B4F410050094C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 125AC8F41B5B4F410050094C /* Images.xcassets */; };
 		125AC8F81B5B4F410050094C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 125AC8F61B5B4F410050094C /* LaunchScreen.xib */; };
 		125AC9041B5B4F410050094C /* CapchaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125AC9031B5B4F410050094C /* CapchaTests.swift */; };
+		125AC90E1B5B50470050094C /* Capcha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125AC90D1B5B50470050094C /* Capcha.swift */; };
+		125AC9121B5B50800050094C /* CapchaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125AC9111B5B50800050094C /* CapchaView.swift */; };
+		125AC9161B5B50AA0050094C /* CapchaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125AC9151B5B50AA0050094C /* CapchaViewController.swift */; };
+		125AC9181B5B52EA0050094C /* CapchaValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125AC9171B5B52EA0050094C /* CapchaValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		125AC8FD1B5B4F410050094C /* CapchaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CapchaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		125AC9021B5B4F410050094C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		125AC9031B5B4F410050094C /* CapchaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapchaTests.swift; sourceTree = "<group>"; };
+		125AC90D1B5B50470050094C /* Capcha.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Capcha.swift; sourceTree = SOURCE_ROOT; };
+		125AC9111B5B50800050094C /* CapchaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CapchaView.swift; sourceTree = SOURCE_ROOT; };
+		125AC9151B5B50AA0050094C /* CapchaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CapchaViewController.swift; sourceTree = SOURCE_ROOT; };
+		125AC9171B5B52EA0050094C /* CapchaValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CapchaValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +88,10 @@
 				125AC8ED1B5B4F410050094C /* AppDelegate.swift */,
 				125AC8EF1B5B4F410050094C /* ViewController.swift */,
 				125AC8F11B5B4F410050094C /* Main.storyboard */,
+				125AC90D1B5B50470050094C /* Capcha.swift */,
+				125AC9171B5B52EA0050094C /* CapchaValidator.swift */,
+				125AC9111B5B50800050094C /* CapchaView.swift */,
+				125AC9151B5B50AA0050094C /* CapchaViewController.swift */,
 				125AC8F41B5B4F410050094C /* Images.xcassets */,
 				125AC8F61B5B4F410050094C /* LaunchScreen.xib */,
 				125AC8EB1B5B4F410050094C /* Supporting Files */,
@@ -156,6 +168,7 @@
 		125AC8E01B5B4F410050094C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = kai.don.aldag;
 				TargetAttributes = {
@@ -212,7 +225,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				125AC9181B5B52EA0050094C /* CapchaValidator.swift in Sources */,
 				125AC8F01B5B4F410050094C /* ViewController.swift in Sources */,
+				125AC90E1B5B50470050094C /* Capcha.swift in Sources */,
+				125AC9121B5B50800050094C /* CapchaView.swift in Sources */,
+				125AC9161B5B50AA0050094C /* CapchaViewController.swift in Sources */,
 				125AC8EE1B5B4F410050094C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +426,7 @@
 				125AC9091B5B4F410050094C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		125AC90A1B5B4F410050094C /* Build configuration list for PBXNativeTarget "CapchaTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +435,7 @@
 				125AC90C1B5B4F410050094C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
