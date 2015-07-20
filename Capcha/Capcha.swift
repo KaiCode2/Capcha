@@ -8,18 +8,6 @@
 
 import UIKit
 
-protocol CapchaType {
-    var answer: String { get }
-    var type: CapchaQuestionType { get }
-    var length: Int { get }
-    var allowedAttempts: Int { get }
-    
-    var validator: CapchaValidatorType { get }
-}
-
-extension CapchaType {
-    var allowedAttempts: Int { return 1 }
-}
 
 enum CapchaQuestionType {
     case Numbers
@@ -27,15 +15,15 @@ enum CapchaQuestionType {
     case All
 }
 
-struct Capcha: CapchaType {
-    var answer: String
-    var type: CapchaQuestionType
-    var length: Int
+struct Capcha {
+    let answer: String
+    let type: CapchaQuestionType
+    let length: Int
     
-    var validator: CapchaValidatorType
+    let validator: CapchaValidator
     
     
-    init(answer: String, type: CapchaQuestionType, length: Int, validator: CapchaValidatorType) {
+    init(answer: String, type: CapchaQuestionType, length: Int, validator: CapchaValidator) {
         self.answer = answer
         self.type = type
         self.length = length

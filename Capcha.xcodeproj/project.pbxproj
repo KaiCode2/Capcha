@@ -10,6 +10,7 @@
 		122898511B5B68E8009E2942 /* Capcha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1228984E1B5B68E8009E2942 /* Capcha.swift */; };
 		122898521B5B68E8009E2942 /* CapchaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1228984F1B5B68E8009E2942 /* CapchaView.swift */; };
 		122898531B5B68E8009E2942 /* CapchaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122898501B5B68E8009E2942 /* CapchaViewController.swift */; };
+		122898551B5C3971009E2942 /* CapchaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 122898541B5C3971009E2942 /* CapchaView.xib */; };
 		125AC8EE1B5B4F410050094C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125AC8ED1B5B4F410050094C /* AppDelegate.swift */; };
 		125AC8F01B5B4F410050094C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125AC8EF1B5B4F410050094C /* ViewController.swift */; };
 		125AC8F31B5B4F410050094C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 125AC8F11B5B4F410050094C /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 		1228984E1B5B68E8009E2942 /* Capcha.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Capcha.swift; sourceTree = "<group>"; };
 		1228984F1B5B68E8009E2942 /* CapchaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CapchaView.swift; sourceTree = "<group>"; };
 		122898501B5B68E8009E2942 /* CapchaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CapchaViewController.swift; sourceTree = "<group>"; };
+		122898541B5C3971009E2942 /* CapchaView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CapchaView.xib; sourceTree = "<group>"; };
 		125AC8E81B5B4F410050094C /* Capcha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Capcha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		125AC8EC1B5B4F410050094C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		125AC8ED1B5B4F410050094C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,10 +90,7 @@
 				125AC8ED1B5B4F410050094C /* AppDelegate.swift */,
 				125AC8EF1B5B4F410050094C /* ViewController.swift */,
 				125AC8F11B5B4F410050094C /* Main.storyboard */,
-				1228984E1B5B68E8009E2942 /* Capcha.swift */,
-				125AC9171B5B52EA0050094C /* CapchaValidator.swift */,
-				1228984F1B5B68E8009E2942 /* CapchaView.swift */,
-				122898501B5B68E8009E2942 /* CapchaViewController.swift */,
+				12DC08E41B5C3DE50085956D /* Capcha */,
 				125AC8F41B5B4F410050094C /* Images.xcassets */,
 				125AC8F61B5B4F410050094C /* LaunchScreen.xib */,
 				125AC8EB1B5B4F410050094C /* Supporting Files */,
@@ -122,6 +121,18 @@
 				125AC9021B5B4F410050094C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		12DC08E41B5C3DE50085956D /* Capcha */ = {
+			isa = PBXGroup;
+			children = (
+				1228984E1B5B68E8009E2942 /* Capcha.swift */,
+				125AC9171B5B52EA0050094C /* CapchaValidator.swift */,
+				122898541B5C3971009E2942 /* CapchaView.xib */,
+				1228984F1B5B68E8009E2942 /* CapchaView.swift */,
+				122898501B5B68E8009E2942 /* CapchaViewController.swift */,
+			);
+			name = Capcha;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +218,7 @@
 			files = (
 				125AC8F31B5B4F410050094C /* Main.storyboard in Resources */,
 				125AC8F81B5B4F410050094C /* LaunchScreen.xib in Resources */,
+				122898551B5C3971009E2942 /* CapchaView.xib in Resources */,
 				125AC8F51B5B4F410050094C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

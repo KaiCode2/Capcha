@@ -8,20 +8,15 @@
 
 import UIKit
 
-protocol CapchaValidatorType {
-    func validate(capcha: CapchaType, attempt: String) -> Bool
-}
-
-
 protocol CapchaDelegate {
     func pass()
     func fail()
 }
 
-struct CapchaValidator: CapchaValidatorType {
+struct CapchaValidator {
     let delegate: CapchaDelegate
 
-    func validate(capcha: CapchaType, attempt: String) -> Bool {
+    func validate(capcha: Capcha, attempt: String) -> Bool {
         if capcha.answer == attempt {
             delegate.pass()
             return true
