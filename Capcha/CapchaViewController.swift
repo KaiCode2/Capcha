@@ -9,21 +9,14 @@
 import UIKit
 
 protocol CapchaDataSource {
-    var capcha: Capcha { get set }
-    
-    init(capcha: Capcha)
+    var capcha: Capcha? { get set }
 }
 
 class CapchaViewController: UIViewController, CapchaDelegate, CapchaDataSource {
     @IBOutlet weak var capchaView: CapchaView!
     @IBOutlet weak var entryField: UITextField!
     
-    var capcha: Capcha
-    
-    required init(capcha: Capcha) {
-        self.capcha = capcha
-        super.init()
-    }
+    var capcha: Capcha?
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -31,7 +24,7 @@ class CapchaViewController: UIViewController, CapchaDelegate, CapchaDataSource {
     
     @IBAction func confirm(sender: AnyObject) {
         let validator = CapchaValidator(delegate: self)
-        validator.validate(capcha, attempt: entryField.text!)
+        validator.validate(capcha!, attempt: entryField.text!)
     }
     
 }
