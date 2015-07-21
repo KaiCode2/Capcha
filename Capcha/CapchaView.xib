@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8152.3" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8124.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8152.3"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -11,19 +11,20 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ShD-pY-66R">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MUV-ld-bQR">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                </imageView>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="ShD-pY-66R" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3yI-Ia-WPj"/>
-                <constraint firstAttribute="bottom" secondItem="ShD-pY-66R" secondAttribute="bottom" id="LSQ-G3-VD2"/>
-                <constraint firstAttribute="trailing" secondItem="ShD-pY-66R" secondAttribute="trailing" id="laD-K0-fMi"/>
-                <constraint firstItem="ShD-pY-66R" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="s0b-bG-324"/>
+                <constraint firstAttribute="bottom" secondItem="MUV-ld-bQR" secondAttribute="bottom" id="3s3-mc-kcQ"/>
+                <constraint firstAttribute="trailing" secondItem="MUV-ld-bQR" secondAttribute="trailing" id="iWZ-5q-Z5m"/>
+                <constraint firstItem="MUV-ld-bQR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jMb-QY-CPB"/>
+                <constraint firstItem="MUV-ld-bQR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rgA-pK-grW"/>
             </constraints>
             <connections>
-                <outlet property="imageView" destination="ShD-pY-66R" id="ot0-Y5-FHy"/>
+                <outlet property="capchaImage" destination="MUV-ld-bQR" id="bOJ-Pd-1nY"/>
             </connections>
         </view>
     </objects>

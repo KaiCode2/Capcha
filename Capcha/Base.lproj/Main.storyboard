@@ -37,40 +37,55 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EYg-Fi-dRD" customClass="CapchaView" customModule="Capcha" customModuleProvider="target">
                                 <rect key="frame" x="95" y="50" width="409" height="214"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="214" id="6IP-X8-NmL"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Enter The Text Above" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJx-Hu-eyJ">
+                                <rect key="frame" x="191" y="289" width="219" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VIC-5V-jPk">
+                                <rect key="frame" x="191" y="495" width="219" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hL4-Uc-lsC">
+                                <rect key="frame" x="433" y="494" width="126" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="126" id="tAn-Nl-0s4"/>
+                                </constraints>
+                                <state key="normal" title="Confirm"/>
+                                <connections>
+                                    <action selector="confirm:" destination="eE4-OH-UNu" eventType="touchUpInside" id="sDT-K0-pNX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="BCI-c7-96Z" firstAttribute="top" secondItem="hL4-Uc-lsC" secondAttribute="bottom" constant="76" id="6bD-vg-0j0"/>
+                            <constraint firstItem="hL4-Uc-lsC" firstAttribute="leading" secondItem="VIC-5V-jPk" secondAttribute="trailing" constant="23" id="8YD-4O-RUC"/>
+                            <constraint firstItem="dJx-Hu-eyJ" firstAttribute="top" secondItem="EYg-Fi-dRD" secondAttribute="bottom" constant="25" id="NY1-UK-RaZ"/>
+                            <constraint firstItem="BCI-c7-96Z" firstAttribute="top" secondItem="VIC-5V-jPk" secondAttribute="bottom" constant="75" id="S4e-oG-zTj"/>
                             <constraint firstAttribute="trailingMargin" secondItem="EYg-Fi-dRD" secondAttribute="trailing" constant="76" id="bD8-h3-uwn"/>
+                            <constraint firstItem="VIC-5V-jPk" firstAttribute="centerX" secondItem="nEF-DH-VvG" secondAttribute="centerX" id="bwK-HX-wd7"/>
+                            <constraint firstItem="dJx-Hu-eyJ" firstAttribute="centerX" secondItem="nEF-DH-VvG" secondAttribute="centerX" id="t5N-uy-MpV"/>
+                            <constraint firstItem="VIC-5V-jPk" firstAttribute="width" secondItem="dJx-Hu-eyJ" secondAttribute="width" id="uSY-u7-xmo"/>
                             <constraint firstItem="EYg-Fi-dRD" firstAttribute="top" secondItem="syl-vh-iCU" secondAttribute="bottom" constant="30" id="xDT-sa-7Be"/>
                             <constraint firstItem="EYg-Fi-dRD" firstAttribute="leading" secondItem="nEF-DH-VvG" secondAttribute="leadingMargin" constant="75" id="yIv-Mw-Vak"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="capchaView" destination="EYg-Fi-dRD" id="zho-Od-yc1"/>
+                        <outlet property="entryField" destination="VIC-5V-jPk" id="Pb9-u5-gCE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FM6-f5-rZZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1056" y="387"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="gc9-TZ-w4Q">
-            <objects>
-                <viewController id="jM0-Br-tjA" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="rn6-V6-VbA"/>
-                        <viewControllerLayoutGuide type="bottom" id="3dT-0A-iC3"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="A0f-Bs-s5h">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="D2K-Ma-q6f" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
+            <point key="canvasLocation" x="1787" y="1047"/>
         </scene>
     </scenes>
 </document>

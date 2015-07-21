@@ -9,19 +9,21 @@
 import UIKit
 
 @IBDesignable class CapchaView: UIView {
-    @IBOutlet weak var imageView: UIImageView! {
+
+    @IBOutlet weak var capchaImage: UIView! {
         didSet {
             let label = UILabel()
             
             var atrString = ""
             atrString += keyword //TODO: iterate over letters in keyword and apply random fonts and sizes
+            
             label.text = atrString
+            let tempView = label.snapshotViewAfterScreenUpdates(true) //TODO: take screen shot of the label then apply translations, morphs, ETC.
+            tempView.transform = CGAffineTransformMakeRotation(CGFloat(arc4random() % 90 - 45))
             
-            let labelImage = UIImage() //TODO: take screen shot of the label then apply translations, morphs, ETC.
-            
-            imageView.image = labelImage
+            capchaImage = tempView
         }
     }
     
-    @IBInspectable var keyword: String = ""
+    internal var keyword: String = ""
 }
