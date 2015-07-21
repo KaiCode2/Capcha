@@ -26,7 +26,7 @@
         <!--Capcha View Controller-->
         <scene sceneID="W0x-ar-ofU">
             <objects>
-                <viewController id="eE4-OH-UNu" customClass="CapchaViewController" customModule="Capcha" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Capcha.CapchaViewController" id="eE4-OH-UNu" customClass="CapchaViewController" customModule="Capcha" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="syl-vh-iCU"/>
                         <viewControllerLayoutGuide type="bottom" id="BCI-c7-96Z"/>

@@ -18,6 +18,11 @@ class CapchaViewController: UIViewController, CapchaDelegate, CapchaDataSource {
     
     var capcha: Capcha?
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        capchaView.keyword = capcha!.answer
+    }
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }

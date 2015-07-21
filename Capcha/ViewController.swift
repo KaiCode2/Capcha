@@ -8,18 +8,35 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CapchaDelegate {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    var capchaResult: Bool = false
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if capchaResult == false {
+            let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+            let capchaVC = storyboard.instantiateViewControllerWithIdentifier(NSStringFromClass(CapchaViewController)) as! CapchaViewController
+            let validator = CapchaValidator(delegate: self)
+            capchaVC.capcha = Capcha(answer: "sdfhserha", type: .All, length: 5, validator: validator)
+            presentViewController(capchaVC, animated: true, completion: nil)
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    //MARK: CapchaDelegate
+    
+    func pass() {
+        dismissViewControllerAnimated(true) { () -> Void in
+            self.capchaResult = true
+        }
     }
-
-
+    
+    func fail() {
+        dismissViewControllerAnimated(true) { () -> Void in
+            self.capchaResult = false
+        }
+    }
 }
 
