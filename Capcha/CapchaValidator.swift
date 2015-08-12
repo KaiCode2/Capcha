@@ -21,6 +21,7 @@ struct CapchaValidator {
             delegate.pass!()
             return true
         }
+        
         delegate.fail!()
         return false
     }

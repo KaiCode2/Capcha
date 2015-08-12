@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8152.3" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8173.3" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8152.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8173.3"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -11,20 +11,20 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MUV-ld-bQR">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wfs-ZU-6SP">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="MUV-ld-bQR" secondAttribute="bottom" id="3s3-mc-kcQ"/>
-                <constraint firstAttribute="trailing" secondItem="MUV-ld-bQR" secondAttribute="trailing" id="iWZ-5q-Z5m"/>
-                <constraint firstItem="MUV-ld-bQR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jMb-QY-CPB"/>
-                <constraint firstItem="MUV-ld-bQR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rgA-pK-grW"/>
+                <constraint firstItem="wfs-ZU-6SP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="CdX-Uq-YRp"/>
+                <constraint firstAttribute="bottom" secondItem="wfs-ZU-6SP" secondAttribute="bottom" id="McY-46-vgl"/>
+                <constraint firstAttribute="trailing" secondItem="wfs-ZU-6SP" secondAttribute="trailing" id="NJl-Ys-ykZ"/>
+                <constraint firstItem="wfs-ZU-6SP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mhk-fD-43k"/>
             </constraints>
             <connections>
-                <outlet property="capchaImage" destination="MUV-ld-bQR" id="bOJ-Pd-1nY"/>
+                <outlet property="capcha" destination="wfs-ZU-6SP" id="3GF-w3-nK3"/>
             </connections>
         </view>
     </objects>

@@ -21,15 +21,11 @@ class CapchaViewController: UIViewController, CapchaDelegate, CapchaDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         capchaView.keyword = capcha!.answer
+        capchaView.setup()
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
     
     @IBAction func confirm(sender: AnyObject) {
-        let validator = CapchaValidator(delegate: self)
-        validator.validate(capcha!, attempt: entryField.text!)
+        print(capcha?.validator.validate(capcha!, attempt: entryField.text!))
     }
-    
 }
